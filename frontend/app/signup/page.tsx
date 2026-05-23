@@ -24,14 +24,13 @@ export default function SignupPage() {
     try {
 
       await axios.post(
-        "https://college-discovery-platform-6aj7.onrender.com",
-
-        {
-          name,
-          email,
-          password,
-        }
-      );
+  "https://college-discovery-platform-6aj7.onrender.com/auth/signup",
+  {
+    name,
+    email,
+    password,
+  }
+);
 
       alert(
         "Signup successful"
