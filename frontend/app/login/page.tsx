@@ -24,7 +24,7 @@ export default function LoginPage() {
       localStorage.setItem("user", JSON.stringify(res.data.user));
 
       alert("Login successful");
-      router.push("/");
+      router.push("/saved");
     } catch (error) {
       console.log(error);
       alert("Login failed");
