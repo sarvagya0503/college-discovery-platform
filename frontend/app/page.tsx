@@ -32,7 +32,7 @@ export default function Home() {
   useEffect(() => {
     axios
       .get(
-        `http://localhost:5000/colleges?search=${search}&location=${location}&maxFees=${maxFees}&page=${page}`
+        `https://college-discovery-platform-6aj7.onrender.com`
       )
       .then((res) => {
         setColleges(res.data);

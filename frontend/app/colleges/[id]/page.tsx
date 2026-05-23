@@ -28,7 +28,7 @@ export default function CollegeDetails() {
 
     axios
       .get(
-        `http://localhost:5000/colleges/${params.id}`
+        `https://college-discovery-platform-6aj7.onrender.com`
       )
       .then((res) => {
         setCollege(res.data);

@@ -24,7 +24,7 @@ export default function SignupPage() {
     try {
 
       await axios.post(
-        "http://localhost:5000/auth/signup",
+        "https://college-discovery-platform-6aj7.onrender.com",
 
         {
           name,

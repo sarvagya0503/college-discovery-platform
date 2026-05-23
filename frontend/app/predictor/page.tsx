@@ -25,7 +25,7 @@ export default function PredictorPage() {
   const handlePredict = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:5000/predictor?exam=${exam}&rank=${rank}`
+        `https://college-discovery-platform-6aj7.onrender.com`
       );
 
       setColleges(res.data);
